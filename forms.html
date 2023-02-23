@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                <h1>Government Exam Form</h1>
+            </legend>
+            <h2>National Defence Services</h2>
+            <div class="container">
+                <div class="container-1">
+                    <Label>Name</Label>
+                    <input type="text" class="input" required><br><br>
+
+                    <Label>Address</Label>
+                    <input type="text" class="input" required><br><br>
+
+                    <label>Gender</label>
+                    <select class="input" required>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select><br><br>
+                </div>
+                <div class="container-2">
+                    <Label>Email</Label>
+                    <input type="email" class="input" required><br><br>
+
+                    <Label>Phone Number</Label>
+                    <input type="number" class="input" required><br><br>
+                </div>
+            </div>
+
+            <fieldset>
+                <legend>Parents Name</legend>
+                <Label>Father's Name</Label>
+                <input type="text" class="input" required><br><br>
+
+                <Label>Mother's Name</Label>
+                <input type="text" class="input" required><br><br>
+            </fieldset>
+            <div style="padding-top:20px;padding-left: 25px">
+                <label>Aadhaar Number</label>
+                <input type="number" class="input" style="width:350px" required><br><br>
+            </div>
+            <div class="container">
+                <div>
+                    <label>Date of Birth</label>
+                    <input type="number" class="input" required><br><br>
+                    <Label>Occupation</Label>
+                    <input type="text" class="input" required><br><br>
+                </div>
+                <div>
+                    <label>Pin Code</label>
+                    <input type="number" class="input" required><br><br>
+                    <Label>Preferred Location</Label>
+                    <input type="text" list="location" class="input" required>
+                    <datalist id="location" required>
+                        <option value="Punjab"></option>
+                        <option value="Uttar Pardesh"></option>
+                        <option value="Haryana"></option>
+                        <option value="Assam"></option>
+                        <option value="Manipur"></option>
+                        <option value="Madhya Pardesh"></option>
+                        <option value="Tamil nadu"></option>
+                        <option value="Kerala"></option>
+                        <option value="Uttarkhanad"></option>
+                        <option value="Gujarat"></option>
+                        <option value="Karnataka"></option>
+                        <option value="Odissa"></option>
+                    </datalist>
+
+                </div>
+            </div>
+            <button class="button" onclick="alert('Form Submitted....')">Submit </button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
